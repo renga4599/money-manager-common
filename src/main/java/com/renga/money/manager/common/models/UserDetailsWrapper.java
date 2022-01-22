@@ -1,4 +1,4 @@
-package renga.money.manager.common.models;
+package com.renga.money.manager.common.models;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

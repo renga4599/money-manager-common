@@ -1,15 +1,15 @@
-package renga.money.manager.common.config;
+package com.renga.money.manager.common.config;
 
 import com.google.common.util.concurrent.ThreadFactoryBuilder;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Lazy;
 
 import java.util.concurrent.*;
 
 @Configuration
 public class ExecutorConfig {
+
     @Bean(name = "mmFixedCachedThreadPoolExecutor")
     public ExecutorService mmFixedCachedThreadPoolExecutor(@Value("${mm.executor.maxPoolSize: 150}") int maxPoolSize,
                                                            @Value("${mm.executor.maxQueueCapacitySize: 300}") int maxQueueCapacity){

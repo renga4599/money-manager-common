@@ -40,3 +40,20 @@ foobar.pluralize('goose')
 # returns 'phenomenon'
 foobar.singularize('phenomena')
 ```
+
+#MySQL
+https://www.mysqltutorial.org/mysql-basics/
+
+to access root:
+
+mysql -u root -p
+
+#### change root password
+
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'India@123';
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'India@1947';
+
+#### to show the databases
+To show the list of databases. 
+
+SHOW DATABASES;
